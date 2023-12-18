@@ -5,7 +5,7 @@ lists file or input said by cute cat
 Inspired by script by @irth
 
 ## Installation
-Paste content of caat.sh add its execution in your .bashrc or similiar file
+Paste content of caat.sh (or add its execution) in your .bashrc or similiar file
 
 
 
