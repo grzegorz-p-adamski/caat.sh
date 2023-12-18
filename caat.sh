@@ -2,7 +2,8 @@ caat() {
     cat_top=( ".ﾊ,,ﾊ " "( ﾟωﾟ) " "|つ　つ" )
     cat_body="|　　| "
     cat_feet="Ｕ\"Ｕ  "
-
+    
+    paws_printed=false
     echo "${cat_top[0]}"
     line_number=0
 
@@ -15,6 +16,7 @@ caat() {
                     ;;
                 1)
                     echo "${cat_top[2]}   $line"
+                    paws_printed=true
                     ;;
                 *)
                     echo "$cat_body   $line"
@@ -31,6 +33,7 @@ caat() {
                     ;;
                 1)
                     echo "${cat_top[2]}   $line"
+                    paws_printed=true
                     ;;
                 *)
                     echo "$cat_body   $line"
@@ -39,7 +42,9 @@ caat() {
             ((line_number++))
         done < "$1"
     fi
-
+    if [ "$paws_printed" = false ]; then
+        echo "${cat_top[2]}"
+    fi
     echo "$cat_body"
     echo "$cat_feet"
 }
