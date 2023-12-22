@@ -7,6 +7,13 @@ Inspired by script by  [@irth](https://www.github.com/irth)
 ## Installation
 Paste content of caat.sh (or add its execution) in your .bashrc or similiar file
 
+TL;DR:
+```bash
+curl https://raw.githubusercontent.com/grzegorz-p-adamski/caat.sh/main/caat.sh | tee -a ~/.bashrc
+```
+
+
+
 
 
 
